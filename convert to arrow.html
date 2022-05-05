@@ -26,29 +26,29 @@
     <p onmouseover="mouseOverFunction(this)">
         Moving your mouse over this text will make it black, so you cannot read it!
     </p>
-    <!-- <script>
-        document.getElementById("button").onclick = function() {
+    <script>
+        document.getElementById("button").onclick = () => {
             setBackgroundColorById("paragraph", "blue");
         }
-        document.getElementById("alert").onclick = function(){
+        document.getElementById("alert").onclick = () => {
             alert(document.getElementById("popup-input").value);
         }
-        document.getElementById("hover-this").onmouseover = function(){
+        document.getElementById("hover-this").onmouseover = () => {
             setBackgroundColorById("body", "red");
         }
-        document.getElementById("hover-this").onmouseout = function(){
+        document.getElementById("hover-this").onmouseout = () => {
             setBackgroundColorById("body", "white");
         }
-        function getValueFromId(id){
+        getValueFromId = (id) => {
             return document.getElementById(id).value;
         }
-        function setBackgroundColorById(id, color){
+        setBackgroundColorById = (id, color) => {
             document.getElementById(id).style = "background-color: " + color;
         }
-        function mouseOverFunction(el){
+        mouseOverFunction = el => {
             el.style = "background-color: black";
         }
-    </script> -->
+    </script>
 </body>
 </html>
 
